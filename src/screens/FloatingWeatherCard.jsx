@@ -3,62 +3,7 @@ import axios from "axios";
 import { Box, Typography, CircularProgress, useTheme } from "@mui/material";
 
 const FloatingWeatherCard = ({ weather, loading, error }) => {
-  // const [weather, setWeather] = useState(null);
-  // const [loading, setLoading] = useState(true);
-  // const [error, setError] = useState(null);
   const theme = useTheme();
-
-  // const fetchWeatherByCity = async (city) => {
-  //   try {
-  //     setLoading(true);
-  //     setError(null);
-  //     const { data } = await axios.get(
-  //       `https://api.openweathermap.org/data/2.5/weather`,
-  //       {
-  //         params: { q: city, units: "metric", appid: API_KEY },
-  //       }
-  //     );
-  //     setWeather(data);
-  //   } catch (err) {
-  //     setError(err.response?.data?.message || err.message);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-
-  // const fetchWeatherByCoords = async (lat, lon) => {
-  //   try {
-  //     setLoading(true);
-  //     setError(null);
-  //     const { data } = await axios.get(
-  //       `https://api.openweathermap.org/data/2.5/weather`,
-  //       {
-  //         params: { lat, lon, units: "metric", appid: API_KEY },
-  //       }
-  //     );
-  //     setWeather(data);
-  //   } catch (err) {
-  //     setError(err.response?.data?.message || err.message);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   if (!navigator.geolocation) {
-  //     fetchWeatherByCity(DEFAULT_CITY);
-  //     return;
-  //   }
-
-  //   navigator.geolocation.getCurrentPosition(
-  //     (pos) => {
-  //       fetchWeatherByCoords(pos.coords.latitude, pos.coords.longitude);
-  //     },
-  //     () => {
-  //       fetchWeatherByCity(DEFAULT_CITY);
-  //     }
-  //   );
-  // }, []);
 
   const getIconUrl = (icon) =>
     `https://openweathermap.org/img/wn/${icon}@2x.png`;

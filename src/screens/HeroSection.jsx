@@ -59,7 +59,6 @@ const HeroSection = () => {
       );
       setWeather(data);
       setError(null);
-      console.log("api key", API_KEY);
     } catch (err) {
       console.error("Weather API Error:", err);
       setError(

@@ -94,7 +94,9 @@ const FeatureHighlights = () => {
             </Typography>
             <Typography
               variant="body2"
-              sx={{ color: theme.palette.text.secondary }}
+              sx={{
+                color: theme.palette.text.secondary,
+              }}
             >
               {description}
             </Typography>

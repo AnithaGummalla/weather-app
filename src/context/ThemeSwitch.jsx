@@ -1,7 +1,7 @@
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
-import Brightness7Icon from "@mui/icons-material/Brightness7"; // Sun icon
+import LightModeIcon from "@mui/icons-material/LightMode"; // Sun icon
 import Brightness2Icon from "@mui/icons-material/Brightness2"; // Moon icon
 import { useColorMode } from "./ThemeContext"; // Your context hook
 
@@ -38,7 +38,7 @@ export default function ThemeToggleTwoIcons() {
         aria-label="Switch to Light Mode"
         size="small"
       >
-        <Brightness7Icon />
+        <LightModeIcon />
       </IconWrapper>
       <IconWrapper
         active={mode === "dark" ? 1 : 0}

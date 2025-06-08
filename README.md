@@ -19,24 +19,6 @@ cd weather-app
 
 Open http://localhost:5173 in your browser.
 
-## Notes on Approach and Design Decisions
-
-- The app fetches weather data only when the user clicks the button in the hero section to avoid unnecessary API calls and improve performance.
-
-- On button click, it attempts to get the user's location via the browser's Geolocation API:
-
-- If the user grants permission, the app fetches weather data using latitude and longitude.
-
-- If the user denies permission or location is unavailable, the app falls back to fetching weather data for the default city ("Bangalore").
-
-- This flow provides control to the user, allowing them to decide when to share location and see weather, improving privacy and UX.
-
-- Weather fetching logic is split into two functions for clarity and maintainability: one handles fetching by coordinates, the other by city name.
-
-- The floating weather card updates dynamically based on whichever data source is successful, ensuring a consistent UI experience.
-
-- Error handling is implemented to inform users if the weather data cannot be retrieved.
-
 ## Weather API Details
 
 - API Provider: [OpenWeatherMap](https://openweathermap.org/api)
@@ -88,7 +70,23 @@ Open http://localhost:5173 in your browser.
 ![Mobile View](./src//assets//screenshots//mobile-testimonials.png)
 ![Mobile View](./src//assets//screenshots//mobile-footer.png)
 
-## 📝 Notes on Approach / Design Decisions
+## Notes on Approach and Design Decisions
+
+- The app fetches weather data only when the user clicks the button in the hero section to avoid unnecessary API calls and improve performance.
+
+- On button click, it attempts to get the user's location via the browser's Geolocation API:
+
+- If the user grants permission, the app fetches weather data using latitude and longitude.
+
+- If the user denies permission or location is unavailable, the app falls back to fetching weather data for the default city ("Bangalore").
+
+- This flow provides control to the user, allowing them to decide when to share location and see weather, improving privacy and UX.
+
+- Weather fetching logic is split into two functions for clarity and maintainability: one handles fetching by coordinates, the other by city name.
+
+- The floating weather card updates dynamically based on whichever data source is successful, ensuring a consistent UI experience.
+
+- Error handling is implemented to inform users if the weather data cannot be retrieved.
 
 - **Component-Based Architecture**: The UI is built using reusable React components (`Navbar`, `HeroSection`, `FeatureHighlights`, `WeatherCard`, `Testimonials`, etc.) to keep the codebase modular and maintainable.
 
