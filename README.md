@@ -3,13 +3,13 @@
 To run this project locally, you need Node.js and npm installed.
 
 Clone the repository:
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/AnithaGummalla/weather-app/
 
 Go to the project folder:
-cd your-repo-name
+cd weather-app
 
 - Create a .env file in the root folder and add API key:
-  VITE_WEATHER_API_KEY= api_key_here
+  VITE_WEATHER_API_KEY=api_key_here
 
 - Install dependencies:
   npm install
